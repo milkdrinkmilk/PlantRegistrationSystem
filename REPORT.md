@@ -98,15 +98,15 @@ variable definition
 IV. Core Code Implementation
 Here is a key code logic snippet from the system:
 
-```print("=== Welcome to the Plant Information Recording System ===")```
-name = input("Please enter the plant variety name: ") # User inputs the variety name (string) # input defaults to string values, which cannot be used for mathematical operations
-```total_count=int(input(f"Please enter the planting quantity of {name} (please type an integer):")) #Receive the planting quantity (integer) input from the user #Convert the variable type to int before input```
-unit_price = float(input(f"Please enter the unit price of {name} (yuan/jin, decimal input allowed):")) # User enters unit price (float)
-health_count=int(input(f"Enter the health count for {name} (please enter an integer):")) # User input health count (integer)
-```is_healthy = health_count > (total_count / 2) # Determine if healthy (boolean value) # Criterion: whether the health count exceeds half of the total count # Comparison automatically converts to Bool```
-total_value = unit_price * health_count # Total price = unit price × number of healthy trees
-health_rate = health_count / total_count * 100 # Health rate = healthy plants / total planted * 100%
-```diseased_count=total_count-health_count # Diseased plants = Total plants - Healthy plants```
+rint("=== 欢迎使用植物信息记录系统 ===")
+name=input("请输入植物的品种名称：")    #用户输入品种名称(字符串)    #input默认键入string值，不能进行数学运算
+total_count=int(input(f"请输入{name}的种植数量(请键入整数):"))    #接收用户输入的种植数量(整数)    #在input前键入int转换变量type
+unit_price=float(input(f"请输入{name}的单价(元/斤，可键入小数):"))    #用户输入单价(浮点数)
+health_count=int(input(f"请输入{name}的健康棵数(请键入整数):"))    #用户输入健康棵数(整数)
+is_healthy=health_count>(total_count/2)    #判断是否健康(布尔值)    #判断标准为健康数是否大于总数一半    #比较自动变为Bool
+total_value=unit_price*health_count    #总价=单价×健康棵数   
+health_rate=health_count/total_count*100    #健康率=健康棵数/种植数量×100%
+diseased_count=total_count-health_count    #病变棵数=种植数量-健康棵数
 
 V. Testing and Operation
 During the development process, the program underwent multiple sets of data testing
