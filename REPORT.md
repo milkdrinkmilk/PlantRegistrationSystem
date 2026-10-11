@@ -38,15 +38,15 @@ CN
 四、 核心代码实现
 以下是系统的关键代码逻辑片段：
 
-rint("=== 欢迎使用植物信息记录系统 ===")
-name=input("请输入植物的品种名称：")    #用户输入品种名称(字符串)    #input默认键入string值，不能进行数学运算
-total_count=int(input(f"请输入{name}的种植数量(请键入整数):"))    #接收用户输入的种植数量(整数)    #在input前键入int转换变量type
-unit_price=float(input(f"请输入{name}的单价(元/斤，可键入小数):"))    #用户输入单价(浮点数)
-health_count=int(input(f"请输入{name}的健康棵数(请键入整数):"))    #用户输入健康棵数(整数)
-is_healthy=health_count>(total_count/2)    #判断是否健康(布尔值)    #判断标准为健康数是否大于总数一半    #比较自动变为Bool
-total_value=unit_price*health_count    #总价=单价×健康棵数   
-health_rate=health_count/total_count*100    #健康率=健康棵数/种植数量×100%
-diseased_count=total_count-health_count    #病变棵数=种植数量-健康棵数
+	rint("=== 欢迎使用植物信息记录系统 ===")
+	name=input("请输入植物的品种名称：")    #用户输入品种名称(字符串)    #input默认键入string值，不能进行数学运算
+	total_count=int(input(f"请输入{name}的种植数量(请键入整数):"))    #接收用户输入的种植数量(整数)    #在input前键入int转换变量type
+	unit_price=float(input(f"请输入{name}的单价(元/斤，可键入小数):"))    #用户输入单价(浮点数)
+	health_count=int(input(f"请输入{name}的健康棵数(请键入整数):"))    #用户输入健康棵数(整数)
+	is_healthy=health_count>(total_count/2)    #判断是否健康(布尔值)    #判断标准为健康数是否大于总数一半    #比较自动变为Bool
+	total_value=unit_price*health_count    #总价=单价×健康棵数   
+	health_rate=health_count/total_count*100    #健康率=健康棵数/种植数量×100%
+	diseased_count=total_count-health_count    #病变棵数=种植数量-健康棵数
 
 五、 测试与运行
 在开发过程中，对程序进行了多组数据测试：
@@ -98,15 +98,15 @@ variable definition
 IV. Core Code Implementation
 Here is a key code logic snippet from the system:
 
-rint("=== 欢迎使用植物信息记录系统 ===")
-name=input("请输入植物的品种名称：")    #用户输入品种名称(字符串)    #input默认键入string值，不能进行数学运算
-total_count=int(input(f"请输入{name}的种植数量(请键入整数):"))    #接收用户输入的种植数量(整数)    #在input前键入int转换变量type
-unit_price=float(input(f"请输入{name}的单价(元/斤，可键入小数):"))    #用户输入单价(浮点数)
-health_count=int(input(f"请输入{name}的健康棵数(请键入整数):"))    #用户输入健康棵数(整数)
-is_healthy=health_count>(total_count/2)    #判断是否健康(布尔值)    #判断标准为健康数是否大于总数一半    #比较自动变为Bool
-total_value=unit_price*health_count    #总价=单价×健康棵数   
-health_rate=health_count/total_count*100    #健康率=健康棵数/种植数量×100%
-diseased_count=total_count-health_count    #病变棵数=种植数量-健康棵数
+	rint("=== 欢迎使用植物信息记录系统 ===")
+	name=input("请输入植物的品种名称：")    #用户输入品种名称(字符串)    #input默认键入string值，不能进行数学运算
+	total_count=int(input(f"请输入{name}的种植数量(请键入整数):"))    #接收用户输入的种植数量(整数)    #在input前键入int转换变量type
+	unit_price=float(input(f"请输入{name}的单价(元/斤，可键入小数):"))    #用户输入单价(浮点数)
+	health_count=int(input(f"请输入{name}的健康棵数(请键入整数):"))    #用户输入健康棵数(整数)
+	is_healthy=health_count>(total_count/2)    #判断是否健康(布尔值)    #判断标准为健康数是否大于总数一半    #比较自动变为Bool
+	total_value=unit_price*health_count    #总价=单价×健康棵数   
+	health_rate=health_count/total_count*100    #健康率=健康棵数/种植数量×100%
+	diseased_count=total_count-health_count    #病变棵数=种植数量-健康棵数
 
 V. Testing and Operation
 During the development process, the program underwent multiple sets of data testing
